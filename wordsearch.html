@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Search - Mkay</title>
+    <link rel="stylesheet" href="wordsearch-styles.css">
+</head>
+<body class="wordsearch-page">
+    <!-- Navigation Bar (Inserted via JavaScript) -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main class="wordsearch-main">
+        <section>
+            <h1>Word Search</h1>
+            <p>Find the hidden words in the grid below.</p>
+            
+            <div class="wordsearch-container">
+                <div id="wordsearch-grid">
+                    <!-- Grid cells will be filled by JavaScript -->
+                </div>
+                <button onclick="checkWordSearch()">Check Solution</button>
+                <button onclick="resetWordSearch()">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Inserted via JavaScript) -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="wordsearch-script.js"></script>
+</body>
+</html>

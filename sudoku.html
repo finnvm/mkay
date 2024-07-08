@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku - Mkay</title>
+    <link rel="stylesheet" href="sudoku-styles.css">
+</head>
+<body class="sudoku-page">
+    <!-- Navigation Bar (Inserted via JavaScript) -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main class="sudoku-main">
+        <section>
+            <h1>Sudoku</h1>
+            <p>Solve the number puzzle by filling in the grid so that every row, column, and 3x3 box contains the numbers 1 through 9.</p>
+            
+            <div class="sudoku-container">
+                <table id="sudoku-grid">
+                    <!-- Grid cells will be filled by JavaScript -->
+                </table>
+                <button onclick="checkSudoku()">Check Solution</button>
+                <button onclick="resetSudoku()">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Inserted via JavaScript) -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="sudoku-script.js"></script>
+</body>
+</html>

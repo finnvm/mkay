@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Story Generator - Mkay</title>
+    <link rel="stylesheet" href="activities-styles.css">
+</head>
+<body class="activities">
+    <!-- Navigation Bar (Inserted via JavaScript) -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main class="activities-main madlibs">
+        <section>
+            <h1>Create Your Own Story!</h1>
+            <p>Fill in the blanks with your chosen words and hit 'Generate Story' to see your custom creation!</p>
+            
+            <form id="madlibs-form">
+                <h2>Adjectives</h2>
+                <input type="text" id="adj1" placeholder="Adjective 1" required>
+                <input type="text" id="adj2" placeholder="Adjective 2" required>
+                <input type="text" id="adj3" placeholder="Adjective 3" required>
+                <input type="text" id="adj4" placeholder="Adjective 4" required>
+                <input type="text" id="adj5" placeholder="Adjective 5" required>
+
+                <h2>Verbs</h2>
+                <input type="text" id="verb1" placeholder="Verb 1" required>
+                <input type="text" id="verb2" placeholder="Verb 2" required>
+                <input type="text" id="verb3" placeholder="Verb 3" required>
+                <input type="text" id="verb4" placeholder="Verb 4" required>
+                <input type="text" id="verb5" placeholder="Verb 5" required>
+
+                <h2>Nouns</h2>
+                <input type="text" id="noun1" placeholder="Noun 1" required>
+                <input type="text" id="noun2" placeholder="Noun 2" required>
+                <input type="text" id="noun3" placeholder="Noun 3" required>
+                <input type="text" id="noun4" placeholder="Noun 4" required>
+                <input type="text" id="noun5" placeholder="Noun 5" required>
+
+                <button type="button" onclick="generateStory()">Generate Story</button>
+            </form>
+            
+            <section id="story-section">
+                <h2>Your Custom Story</h2>
+                <p id="story"></p>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer (Inserted via JavaScript) -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        function generateStory() {
+    // Get input values
+            const adj1 = document.getElementById('adj1').value;
+            const adj2 = document.getElementById('adj2').value;
+            const adj3 = document.getElementById('adj3').value;
+            const adj4 = document.getElementById('adj4').value;
+            const adj5 = document.getElementById('adj5').value;
+            const verb1 = document.getElementById('verb1').value;
+            const verb2 = document.getElementById('verb2').value;
+            const verb3 = document.getElementById('verb3').value;
+            const verb4 = document.getElementById('verb4').value;
+            const verb5 = document.getElementById('verb5').value;
+            const noun1 = document.getElementById('noun1').value;
+            const noun2 = document.getElementById('noun2').value;
+            const noun3 = document.getElementById('noun3').value;
+            const noun4 = document.getElementById('noun4').value;
+            const noun5 = document.getElementById('noun5').value;
+
+            // Generate story
+            const story = `
+                Once upon a time in a ${adj1} land, there was a ${noun1} who loved to ${verb1}. Every day, the ${noun1} would ${verb2} with their ${adj2} friends.
+                One day, they found a ${noun2} that could ${verb3}. It was the most ${adj3} day ever! The ${noun1} and their friends decided to ${verb4} to the ${adj4} ${noun3}.
+                They ${verb5} all day and discovered many ${adj5} ${noun4}s. By the end of the day, they were tired but happy. They returned to their ${noun5} and lived ${adj4} ever after.
+            `;
+
+            // Display story
+            document.getElementById('story').innerText = story;
+        }
+
+
+        
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

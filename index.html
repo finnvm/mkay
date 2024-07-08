@@ -3,49 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mkay</title>
+    <title>Mkay - Your Fun Zone!</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        });
-    </script>
 </head>
 <body>
+    <!-- Navigation Bar (Inserted via JavaScript) -->
+    <div id="navbar"></div>
 
-    <header id="header"></header>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Welcome to Mkay - Your Fun Zone!</h1>
+        <p>Dive into a world of fun activities designed just for you.</p>
+    </header>
 
-    <section class="hero">
-        <h1>Mkay</h1>
-        <p>Master the Life</p>
-    </section>
-
-    <section class="articles">
-        <h2>Featured Articles</h2>
-        <div class="article">
-            <h3>How to Take a Shit</h3>
-            <p>Learn the essentials of taking a dump.</p>
+    <!-- Activities Section -->
+    <section class="activities">
+        <h2>Explore Our Fun Activities</h2>
+        <div class="activity-cards">
+            <div class="activity-card">
+                <img src="images/madlibs.jpeg" alt="Mad Libs Story Generator">
+                <h3>Mad Libs Story Generator</h3>
+                <p>Create a hilarious story with your own words!</p>
+                <a href="madlibs.html">Start Creating</a>
+            </div>
+            <div class="activity-card">
+                <img src="images/trivia.jpeg" alt="Trivia Quiz">
+                <h3>Trivia Quiz</h3>
+                <p>Test your knowledge with our fun quizzes.</p>
+                <a href="trivia.html">Take a Quiz</a>
+            </div>
+            <div class="activity-card">
+                <img src="images/puzzle.jpeg" alt="Puzzle Games">
+                <h3>Puzzle Games</h3>
+                <p>Challenge your mind with our interactive puzzles.</p>
+                <a href="puzzle.html">Start Puzzling</a>
+            </div>
+            <div class="activity-card">
+                <img src="images/drawing.jpeg" alt="Drawing Board">
+                <h3>Drawing Board</h3>
+                <p>Unleash your creativity on our virtual drawing board.</p>
+                <a href="drawing.html">Start Drawing</a>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Articles</a>
-            <a href="#">Contact Us</a>
-        </nav>
-        <div class="social-icons">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-        </div>
-        <p>© 2024 Mkay. All rights reserved.</p>
-    </footer>
+    <!-- Footer (Inserted via JavaScript) -->
+    <div id="footer"></div>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

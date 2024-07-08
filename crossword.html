@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword - Mkay</title>
+    <link rel="stylesheet" href="crossword-styles.css">
+</head>
+<body class="crossword-page">
+    <!-- Navigation Bar (Inserted via JavaScript) -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main class="crossword-main">
+        <section>
+            <h1>Crossword Puzzle</h1>
+            <p>Solve the crossword by filling in the grid below.</p>
+            
+            <div class="crossword-container">
+                <table id="crossword-grid">
+                    <!-- Grid cells will be filled by JavaScript -->
+                </table>
+                <button onclick="checkCrossword()">Check Solution</button>
+                <button onclick="resetCrossword()">Reset</button>
+            </div>
+            
+            <div class="hints-container">
+                <h2>Hints</h2>
+                <p><strong>Across:</strong></p>
+                <ul>
+                    <li>Greeting (5 letters)</li>
+                    
+                </ul>
+                <p><strong>Down:</strong></p>
+                <ul>
+                    
+                    <li>Our planet (5 letters)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Inserted via JavaScript) -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="crossword-script.js"></script>
+</body>
+</html>

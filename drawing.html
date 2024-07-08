@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Board - Mkay</title>
+    <link rel="stylesheet" href="drawing-styles.css">
+</head>
+<body class="drawing-page">
+    <!-- Navigation Bar (Inserted via JavaScript) -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main class="drawing-main">
+        <section>
+            <h1>Unleash Your Creativity!</h1>
+            <p>Use the drawing board below to create your masterpiece.</p>
+            
+            <div class="drawing-container">
+                <canvas id="drawing-board" width="800" height="600"></canvas>
+            </div>
+            
+            <div class="controls">
+                <label for="color-picker">Choose Color:</label>
+                <input type="color" id="color-picker" value="#000000">
+                <label for="brush-size">Brush Size:</label>
+                <input type="range" id="brush-size" min="1" max="20" value="5">
+                <button onclick="clearCanvas()">Clear</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Inserted via JavaScript) -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="drawing-script.js"></script>
+</body>
+</html>

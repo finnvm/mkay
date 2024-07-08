@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f8ff; /* Light background color for a fun and engaging look */
+    color: #333; /* General text color */
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mad Libs Specific Styles */
+.madlibs h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff6347; /* Tomato color for headings */
+}
+
+.madlibs p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.madlibs form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.madlibs form h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4682b4; /* Steel blue color for form section headings */
+}
+
+.madlibs form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.madlibs form button {
+    padding: 10px 20px;
+    background-color: #32cd32; /* Lime green color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.madlibs form button:hover {
+    background-color: #228b22; /* Dark green color for button hover state */
+}
+
+#story-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#story-section h2 {
+    font-size: 2em;
+    color: #ff6347; /* Tomato color for headings */
+    margin-bottom: 10px;
+}
+
+#story-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    white-space: pre-wrap; /* Preserve whitespace for story output */
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
